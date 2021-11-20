@@ -32,47 +32,16 @@ struct LinkedList
 #endif
 
 
-/// @fn LinkedList ll_newLinkedList*(void)
-/// @brief Crea un nuevo LinkedList.
-///
-/// @return Retorna el nuevo LinkedList
+
 LinkedList* ll_newLinkedList(void);
-/// @fn int ll_len(LinkedList*)
-/// @brief Se encarga de retornar el tamaño del LinkedList
-///
-/// @param this
-/// @return El tamaño
 int ll_len(LinkedList* this);
 Node* test_getNode(LinkedList* this, int nodeIndex);
 int test_addNode(LinkedList* this, int nodeIndex,void* pElement);
-/// @fn int ll_add(LinkedList*, void*)
-/// @brief Agrega un elemento al final de LinkedList
-///
-/// @param this
-/// @param pElement
-/// @return int
 int ll_add(LinkedList* this, void* pElement);
-/// @fn void ll_get*(LinkedList*, int)
-/// @brief Retorna un puntero al elemento que se encuentra en el índice especificado.
-///
-/// @param this
-/// @param index
 void* ll_get(LinkedList* this, int index);
 int ll_set(LinkedList* this, int index,void* pElement);
-/// @fn void ll_remove(LinkedList*, int)
-/// @brief Elimina un elemento en LinkedList, en el índice especificado.
-///
-///
-/// @param this
-/// @param index
-/// @return int
 int ll_remove(LinkedList* this,int index);
 int ll_clear(LinkedList* this);
-/// @fn int ll_deleteLinkedList(LinkedList*)
-/// @brief Elimina el LinkedList
-///
-/// @param this
-/// @return
 int ll_deleteLinkedList(LinkedList* this);
 int ll_indexOf(LinkedList* this, void* pElement);
 int ll_isEmpty(LinkedList* this);
